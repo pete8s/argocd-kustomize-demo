@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: applications
+  name: all-applications
   namespace: argocd
 
 spec:
@@ -13,7 +13,6 @@ spec:
       recurse: true
     targetRevision: HEAD
     path: applications
-
 
   destination:
     server: 'https://kubernetes.default.svc'

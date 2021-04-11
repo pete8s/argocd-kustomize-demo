@@ -4,6 +4,3 @@ kind: Kustomization
 resources:
   - application-all-applications.yml
   - application-nginx.yml
-
-transformers:
-  - ../transformations/set-env-path
