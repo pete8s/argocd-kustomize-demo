@@ -1,0 +1,12 @@
+apiVersion: builtin
+kind: ValueAddTransformer
+metadata:
+  name: set-path
+
+value: /prod
+
+targets:
+- selector:
+    name: all-applications
+  fieldPath: spec/source/path
+  filePathPosition: 2
