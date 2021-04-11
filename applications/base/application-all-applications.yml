@@ -9,8 +9,6 @@ spec:
 
   source:
     repoURL: https://github.com/pete8s/argocd-kustomize-demo.git
-    directory:
-      recurse: true
     targetRevision: HEAD
     path: applications
 
